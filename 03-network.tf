@@ -31,8 +31,8 @@ resource "azurerm_network_interface" "name" {
 
 resource "azurerm_network_security_group" "terra-nsg" {
   name = var.network_sg_name
-  location             = var.location
-  resource_group_name  = var.resource_group_name
+  location             = azurerm_resource_group.terra_rg.location
+  resource_group_name  = azurerm_resource_group.terra_rg.name
   security_rule {
     name = "inbound-1"
     description = "test"
@@ -44,7 +44,6 @@ resource "azurerm_network_security_group" "terra-nsg" {
     access = "Allow"
     priority = 100
     direction = "Inbound"
-
   }
 
 }

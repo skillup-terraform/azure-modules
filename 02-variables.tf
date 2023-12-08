@@ -10,7 +10,7 @@ variable "location" {
 
 variable "virtual_network_name" {
     type = string
-    #default = "dev-vm-network-01"
+    default = "dev-vm-network-01"
 }
 
 variable "subnet_name" {
