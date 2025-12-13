@@ -19,7 +19,7 @@ resource "azurerm_linux_virtual_machine" "terra-linux-vm-01" {
 
   admin_ssh_key {
   username   = "azureuser"
-  public_key = file("~/.ssh/suresh.akidev.pub")
+  public_key = file("~/.ssh/suresh_azure.pub")
   }
 }
 
