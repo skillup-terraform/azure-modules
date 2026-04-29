@@ -1,4 +1,4 @@
-variable "resource_group_name1" {
+variable "resource_group_name" {
   type = string
   default = "terraform-rg-01"
 }
