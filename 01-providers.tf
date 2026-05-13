@@ -10,4 +10,3 @@ terraform {
 
 
 # Provider Block
-khkjj
